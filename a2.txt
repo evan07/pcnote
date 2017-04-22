@@ -1,0 +1,43 @@
+NO1.在百度上搜索git官网，按电脑是几位的（32bit/64bit）安装好git软件。
+
+NO2.生成ssh：
+方法：
+1.在桌面右击，在右击菜单中找到 git bash here 确定。
+2.在弹出的窗口中输入 ssh-keyben -t rsa -C "注册邮箱" （注：在注册GitHub时的邮箱）
+3.在我的电脑C盘——用户---administrator--找到.ssh的文件夹--找到id_rsa.pu文件--拖入sublime中打开，即生成密钥--ctrl+c复制密钥。
+
+
+N03.在github官网中，浏览器的地址栏右下一点找到用户的图标头像，点击下拉小三角形，找到settings（设置）,再弹出的页面左侧找到ssh and gpg keys点击，在刷新的页面右上侧找到绿色图标new ssh key点击，然后在下面设置Title，把复制的密钥粘贴在Key下面的。然后在下面点击Add ssh key(添加密钥)，完成。
+
+
+NO4.在标题右上方找到+号点击，找到New repository（新建仓库），然后在输入repository name，在下面选择pubic（公开），点击create repository（创建仓库）完成。
+
+
+NO5.在桌面新建文件夹--在文件夹内右击--git bash here,--在弹出的窗口里初始化项目目录
+
+
+1.初始化项目目录
+输入git init回车
+
+2.初始化后再项目目录里会有个.git的隐藏式文件出现。
+
+3.连接GitHub仓库
+输入git remote add origin 仓库地址 回车。
+
+4.添加上传文件
+输入git add 文档名全称（或者输入文档名字首字母后按TAB键会自动显示文档）回车。
+
+5.如何查看文档上传文件
+输入git status回车（如已添加文档名字是绿色）。
+
+6.对于上传文档的描述
+输入git commit -m "描述内容"回车
+
+7.上传文档至GitHub仓库
+输入git push -u origin master回车
+
+8.将GitHub仓库里的文档同步到另一文件夹的操作
+先新建文件夹并初始化：新建-右键git bash here--输入git init回车
+连接GitHub仓库：输入git remote add origin 仓库地址
+同步文档：git pull origin master
+
